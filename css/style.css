@@ -1,0 +1,587 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+  background-color: #F2F2F2;
+}
+
+/* Global ----------------*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+span {
+  color: burlywood;
+}
+
+/* Button-------------- */
+.button_1 {
+  height: 38px;
+  background: sandybrown;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+.button_1:hover {
+  background: #c0824b;
+}
+
+/* Header---------------- */
+header {
+  background: teal;
+  width: 100%;
+  color: #FFF;
+  padding-top: .1%;
+  min-height: 50%;
+  border-bottom: 3px solid burlywood ;
+}
+
+header a {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 100%;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+
+header #branding {
+  float: left;
+  cursor: pointer;
+}
+
+header #branding h1 {
+  font-size: 150%;
+  font-weight: bold;
+  color: white;
+}
+
+header nav {
+  float: right;
+}
+
+header nav li 
+  a:hover {
+    color: burlywood;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+header .active, header .current a {
+  color: burlywood;
+  font-weight: bold;
+}
+
+/* Showcase ----------------*/
+#showcase {
+  min-height: 400%;
+  background: url(../img/slider/all-title-bg.jpg) no-repeat 0 -150px;
+  text-align: center;
+  color: #0bb3b3;
+}
+
+.subhead{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: .3em;
+}
+
+h1{
+  font-size: 2em;
+  line-height: 1.3em;
+  margin-top: .2em;
+  color: teal;
+}
+
+.primary-cta{
+  background: teal; 
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-size: 1.2em;
+  border-radius: 5em;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.primary-cta:hover{
+  background: white; 
+  color: black;
+  transition: all 0.5s ease-in-out;
+ 
+}
+
+
+/* Search section---------------- */
+#search {
+  padding: .1%;
+  background: teal;
+}
+
+#search h1 {
+  float: left;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 1.5%;
+}
+
+#search form {
+  float: right;
+  margin-top: 8px;
+}
+
+#search input[type="text"] {
+  text-align: center;
+  padding: 4px;
+  height: 38px;
+  width: 250px;
+  border-radius: 2em;
+  border: 1px solid gray;
+}
+
+
+/* Card section----------------- */
+#cards {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cards .card{
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 300px;
+  display: inline-block;
+  margin-right: 20px; /*space-between card*/
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  background: white;
+}
+
+.card h4 a{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.card h4 a:hover{
+  color: burlywood;
+}
+
+.card:hover {
+  box-shadow: 0 2px 10px 2px #777;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card i.size {
+  color: burlywood;
+  margin-top: 1em;
+  font-size: 3em;
+}
+
+
+/* Popular section ------------*/
+#popular {
+  background-color: white;
+  padding-bottom: 3rem;
+  padding-top: 10px;
+}
+
+#popular h4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#popular h3 a{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+#popular h3 a:hover{
+  color: burlywood;
+}
+
+
+/* Follow section-----------------*/
+#follow {
+  background-color: teal;
+  padding: 5px;
+ 
+}
+
+#follow h1 {
+  font-size: 180%;
+  text-align: center;
+  color: white;
+  margin-top: 5px;
+}
+
+.follow p {
+  text-align: center;
+  color: white;
+  font-size: 92%;
+  margin-top: -15px;
+}
+
+.social a {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 250%;
+  margin-top: -10px;
+}
+
+.social a:hover {
+  color: burlywood;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Galleries section -------------*/
+#gallary {
+  background-color: white;
+  padding-bottom: 3rem;
+  padding-top: 10px;
+}
+
+#gallary h4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.card-gal {
+  text-align: center;
+  max-width: 300px;
+  display: inline-block;
+  margin-right: 20px; /*space-between card*/
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  background: white;
+}
+
+.card-gal:hover {
+  box-shadow: 0 2px 10px 2px #777;
+
+}
+
+.card-gallary img {
+  width: 100%;
+  
+}
+
+/* contact-section-------------- */
+
+.contact-section{
+padding: 20px;
+}
+
+.contact-left{
+background-color: rgb(230, 230, 212);
+padding: 30px;
+border-radius: 2em;
+}
+
+label{
+  display: block;
+  font-size: 1em;
+  margin: 10px;
+  margin-bottom: .5em;
+  text-align: left;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 150%;
+}
+
+input, textarea{
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: teal;
+  color: white;
+  font-weight: 500px;
+  font-size: 1.1em;
+  border: none;
+  margin-bottom: 1em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: .8em 2em;
+  width: unset;
+  cursor: pointer;
+
+}
+.send-message-cta:hover{
+background-color: burlywood;
+transition: all 0.5s ease-in-out;
+}
+
+
+/* Footer------------------------------*/
+.footer {
+  padding:  1px;
+  color: white;
+  background-color: teal;
+  text-align: center;
+}
+
+/* About section-------------- */
+#about {
+  padding-bottom: 3rem;
+  padding-top: 10px;
+}
+
+#about h4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.article{
+  background-color: white;
+  color: black;
+  padding:1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 20px;
+  float: left;
+  width: 65%;
+}
+
+.article:hover{
+  box-shadow: 0 2px 10px 2px #777;
+}
+
+.aside{
+  background-color: rgb(73, 72, 72);
+  color: white;
+  padding:1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+float: right;
+width: 30%;
+padding-top: -5rem;
+}
+
+.aside:hover{
+  box-shadow: 0 2px 10px 2px #777;
+}
+
+
+/* Booking section-------------- */
+
+#booking {
+  padding-bottom: 3rem;
+  padding-top: 10px;
+}
+
+#booking h4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#booking h3 a{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+#booking h3 a:hover{
+  color: burlywood;
+}
+
+
+/* Services section-------------- */
+
+#services {
+  padding-bottom: 3rem;
+  padding-top: 10px;
+}
+
+#services h4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#services h3 a{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+#services h3 a:hover{
+  color: burlywood;
+}
+
+/* Contact section-------------- */
+#contact {
+  padding-bottom: 3rem;
+  padding-top: 10px;
+}
+
+#contact h4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
+
+/* @Media Queries-------------------------*/
+
+@media only screen and (max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #search h1,
+  #search form,
+  #cards .card,
+  #about .article,
+  #about .aside{
+    float: none;
+    text-align: center;
+    width: 89%;    
+  }
+
+  #about .article,
+  #about .aside{
+    font-size: 88%;
+    text-align: center;
+    margin: 20px;
+  }
+
+  #about .article p,
+  #about .aside p{
+   padding: 20px;
+  }
+
+ 
+  #booking .card
+  {
+    font-size: 80%;
+    text-align: center;
+    margin: 20px;
+  }
+
+  #booking .card-description p
+  {
+   padding: 20px;
+  }
+
+.contact-left h2,
+label,
+input, textarea,
+input[type="submit"]
+{
+font-size: 90%;
+}
+
+header #branding{
+  font-size: 18px;
+  margin-top: 4px;
+
+}
+
+li.current a{
+  font-weight: bold;
+}
+
+  #cards .card,
+  #popular .card,
+  #gallary .card-gal{
+    margin-bottom: 25px;
+    width: 100%;
+  
+  }
+
+  #showcase h1{
+    margin-top: -5%;
+    margin-bottom: 10%;
+  }
+
+  #search .button_1{
+    display: block;
+    width: 100%;
+  }
+  
+  #search form input[type="text"]{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/* @media only screen and (min-width:1024px){
+  .card {
+   
+    text-align: center;
+    max-width: 30%;
+    display: inline-block;
+  }
+} */
+
+@media only sceen and (min-width: 1080px){
+
+  .container{
+      width: 1080px;
+      margin: 0 auto;
+
+  }
+
+  section{
+    padding: 10em 40em;
+  }
+}
