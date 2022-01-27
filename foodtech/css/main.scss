@@ -1,0 +1,595 @@
+// CSS Custom properties----/
+:root{
+  --primary-color: rgb(107, 186, 223);
+  --secondary-color: rgb(85, 147, 175);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.3em;
+    padding: 0;
+    margin: 0;
+    background-color: #F2F2F2;
+  }
+  
+/* Global ----------------*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+    
+  ul, li {
+    text-decoration: none;
+    list-style-type: none;
+
+    ul{
+      margin-top:20px;
+    }
+
+    li {
+      float: left;
+      display: inline;
+      padding: 0 10px 0 10px;
+    }
+  }
+  
+  section {
+    padding: 1em 1rem;
+  }
+
+  /* Header section---------------- */
+  header {
+    background: white;
+    width: 100%;
+    color: black;
+    padding-top: .1%;
+    min-height: 50%;
+    border-bottom: 3px solid var(--primary-color);
+
+    a {
+      color: black;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 100%;
+    }
+
+    span{
+      color: var(--primary-color);
+    }
+     
+     #branding {
+      float: left;
+      cursor: pointer;
+    }
+    
+     #branding h1 {
+      font-size: 150%;
+      font-weight: bold;
+      color: black;
+      margin-top: 10px;
+    }
+  }
+
+   nav {
+    float: right;
+
+     li 
+    a:hover {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: all 0.5s ease-in-out;
+  }
+
+  .active, .current a {
+    color: var(--primary-color);
+    font-weight: 550;
+  }
+  }
+  
+  /* Showcase ----------------*/
+  #showcase {
+    min-height: 400%;
+    background: url(../img/image--1.jpg) no-repeat 0 63%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+
+    .subhead{
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #F2F2F2;
+      letter-spacing: .3em;
+    }
+
+    h1{
+      font-size: 2em;
+      line-height: 1.3em;
+      margin-top: .2em;
+      color: white;
+    }
+
+    .btn-readmore{
+      padding: 8px 24px;
+      border: 3px solid #347883;
+      border-radius: 1rem;
+      transition: 0.4s;
+      display: inline-block;
+      margin-bottom: 24px;
+      // margin-left: 24px;
+      margin: 10px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      background: white;
+    }
+    
+    .btn-readmore:hover{
+      background: #3EC1D5;
+      text-decoration: none;
+      padding: 8px 64px 8px 24px;
+      color: white;
+    }
+   }
+  
+// How-it-works section--------/
+  #how-it-works{
+    background-color: white;
+    padding: 20px;
+
+    h2{
+      font-size: 1.4rem;
+      padding-bottom: 1%;
+    }
+    
+.btn-readmore{
+  padding: 8px 24px;
+  border: 3px solid #347883;
+  border-radius: 1rem;
+  transition: 0.4s;
+  display: inline-block;
+  margin-bottom: 24px;
+  margin: 10px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+}
+
+.btn-readmore:hover{
+  background: #3EC1D5;
+  text-decoration: none;
+  padding: 8px 64px 8px 24px;
+  color: white;
+  cursor: pointer;
+}
+
+    .how-it-works_icon {
+      padding: 0.3rem 1rem 0.3rem 0.5rem;
+      font-size: 1rem;
+      color: #7e7e7e;
+    }
+  }
+
+// Restaurants section------/
+#restaurant {
+  background-color: #f6f6f6;
+  padding: 2rem;
+  padding-top: 5px;
+
+  .restaurant h2 {
+    margin: 0%;
+    margin-top: 2rem;
+    padding: 1rem 0rem 1rem 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .restaurant_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 0rem 1rem 0rem 1rem;  
+    position: relative;
+  }
+
+  .card .card_image:hover {
+    transform: rotate(.4deg) scale(1.0, 1);
+    transition: all 0.5s ease-in-out 0s;
+    opacity: .5;
+  }
+
+  .card_image {
+    height: 15rem;
+    background-size: cover;
+    border-radius: 1rem 1rem 0rem 0rem;
+    background-position: center;
+  }
+
+  .card_image--1 {
+    background-image: url("../img/image--1.jpg");
+  }
+  .card_image--2 {
+    background-image: url("../img/image--2.jpg");
+  }
+  .card_image--3 {
+    background-image: url("../img/image--3.jpg");
+  }
+  .card_image--4 {
+    background-image: url("../img/image--4.jpg");
+  }
+  .card_description {
+    position: relative;
+    border-radius: 0rem 0rem 1rem 1rem;
+    background: #f6f6f6;
+    box-shadow: 2px 3px 20px 0px #2b2b2b3f;
+  }
+  .card_description h4 {
+    margin: 0rem 0.7rem 0rem 0.7rem;
+    padding-top: 1rem;
+  
+  }
+  .card_description p {
+    margin: 0.3rem 0.7rem 0rem 0.7rem;
+    padding-bottom: 1rem;
+  }
+}
+
+// Apropos section-----/
+    .apropos_image1 {
+      background-image: url("../img/apropos.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 20rem;
+      position: relative;
+    }
+
+    #apropos{
+      background-color: white;
+      padding: 20px;
+
+      h2{
+        font-size: 1.4rem;
+        padding-bottom: 1%;
+      }
+    }
+
+    .article{
+      background-color: white;
+      color: black;
+      padding:1%;
+      box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    
+    .article:hover{
+      box-shadow: 0 2px 10px 2px #777;
+    }
+
+    .article_2{
+      background-color: rgb(116, 116, 116);
+      color: white;
+      padding:1%;
+      box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      margin-bottom: 20px;
+      
+    }
+    
+    .article_2:hover{
+      box-shadow: 0 2px 10px 2px #777;
+    }
+    
+
+//Menu1 section-----/
+.menu1_image2 {
+  background-image: url("../img/image--1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  position: relative;
+}
+
+  .btn-1_apropos {
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    padding: 1rem 5% 1rem 5%;
+    font-size: 0.9rem;
+    width: 30%;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+    margin-right: 15px;
+    background: #f6f6f6;
+    box-shadow: 2px 3px 20px 0px #2b2b2b3f;
+  }
+
+  .btn-1_apropos:hover {
+    color: white;
+    background-color: var(--primary-color);
+    transition: all 0.5s ease-in-out;
+  }
+
+  p.apropos_title {
+    margin: 0rem 0rem 0rem 0rem;
+    font-weight: 600;
+  }
+
+   p.apropos_prix {
+    font-weight: 400;
+    padding-top: -3rem;
+  }
+  p.apropos_prix span{
+    margin: 20px;
+  }
+
+  .btn-readmore{
+    padding: 8px 24px;
+    border: 3px solid #347883;
+    border-radius: 1rem;
+    transition: 0.4s;
+    display: inline-block;
+    margin-bottom: 24px;
+    margin: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+  }
+  
+  .btn-readmore:hover{
+    background: #3EC1D5;
+    text-decoration: none;
+    padding: 8px 64px 8px 24px;
+    color: white;
+  }
+
+
+//Menu2 section-----/
+.menu2_image2 {
+  background-image: url("../img/image--2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  position: relative;
+}
+
+//Menu3 section-----/
+.menu3_image2 {
+  background-image: url("../img/image--3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  position: relative;
+}
+
+//Menu4 section-----/
+.menu4_image2 {
+  background-image: url("../img/image--4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  position: relative;
+}
+
+//Contact section-----/
+.contact_image2 {
+  background-image: url("../img/contact.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  position: relative;
+}
+
+#contact{
+  background-color: white;
+  padding: 20px;
+
+  h2.contact {
+    font-size: 1.2rem;
+    margin-left: 5%;
+    font-weight: 550;
+  }
+
+}
+
+  .contact-left{
+  background-color: rgb(230, 230, 212);
+  padding: 30px;
+  border-radius: 2em;
+
+  
+  label{
+    display: block;
+    font-size: 1em;
+    margin: 10px;
+    margin-bottom: .5em;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  h2{
+    font-size: 150%;
+  }
+  
+  input, textarea{
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    border: 1px solid gray;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color:var(--primary-color);
+    color: white;
+    font-weight: 500px;
+    font-size: 1.1em;
+    border: none;
+    margin-bottom: 1em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: .8em 2em;
+    width: unset;
+    cursor: pointer;
+  
+  }
+  .send-message-cta:hover{
+  background-color: var(--secondary-color);
+  transition: all 0.5s ease-in-out;
+  }
+  }
+  
+  
+// Footer section-----/
+ #footer{
+    background-color:var(--secondary-color);
+    text-align: center;
+    padding-top: 2px;  
+    padding: .1em 1rem;
+
+    .flow-text {
+      color: white;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+   .flow-text-2 a{
+     color: white;
+     float: flex;
+     margin: 5px;
+     padding-bottom: -15px;
+   }
+   .flow-text-2 a:hover{
+    color: black;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .active, .current_2{
+    font-weight: 550;
+  }
+
+   hr{
+     border-bottom:2px dotted rgb(206, 206, 206);
+   }
+}
+
+
+
+/* @Media Queries-------------------------*/
+@media only screen and (max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  .card,
+  #how-it-works .how-it-works,
+  .restaurant_cards,
+  .article, .article_2
+    {float: none;
+    text-align: center;
+    width: 100%; 
+  }
+  
+  #apropos_image2{
+      background-position: center;
+      max-width: 100%;
+      height: 200px;
+    }
+
+
+  #apropos{
+    overflow: none;
+
+    .btn-1_apropos{
+      width: 100%;
+    }
+
+    .entree{
+      padding-bottom: 2.5rem;
+    }
+
+    .plats{
+      padding-bottom: 2.5rem;
+    }
+
+    .desserts{
+      padding-bottom: 2.5rem;
+    }
+
+    .article p{
+      padding: 20px;
+      text-align: center;
+    }
+
+    .article_2 p{
+      padding: 20px;
+      text-align: center;
+    }
+  }
+
+  header nav ul{
+    padding: 1%; 
+    margin-top: -10px; 
+    margin-bottom: 5px;   
+  }
+
+  #how-it-works{
+    .btn-1 {
+      display: block;
+      position: relative;
+      width: 100%;
+      }
+
+      h2{
+        padding-bottom: 2%;
+      }
+  }
+  
+  #restaurant{
+    .restaurant_cards{
+      margin-bottom: 20px;
+    }
+    .restaurant h2 {
+      margin-left: 8%;
+      padding-left: 0rem;
+    }
+    .restaurant_cards {
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+  } 
+
+  #footer {
+    align-items: center;
+
+    p.flow-text a {
+      font-size: 1rem;
+    }
+  }
+
+  #contact h2.contact {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+}
+

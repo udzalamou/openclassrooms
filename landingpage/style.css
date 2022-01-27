@@ -1,0 +1,412 @@
+/* All CSS ---------------*/
+
+/*CUSTOM VARIABLES HERE*/
+:root{
+    ---hover-blue:#3EC1D5;
+    --clr-primary-5: hsl(0, 0%, 100%);
+    --clr-primary-5-hover: hsl(205, 86%, 81%);
+    --primary-color:rgb(173, 43, 43);
+    --primary-color-hover:rgb(221, 59, 59);
+    --secondary-color:#103063;
+    --secondary-color-hover:#1950aa;
+    --light-color:#f4f4f4;
+    --white-color:#fff;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #252529;
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+/* Section */
+.section{
+    padding: 2rem 0;
+}
+
+.section-head{
+    font-size: 2.5rem;
+    margin: 0;
+}
+.section h3{
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+section#publication{
+  background: url(../landingpage/img/section-bg.jpg) no-repeat bottom/cover;
+  padding: 7rem 0;
+  overflow:hidden;
+}
+
+/* Grid variable */
+.gift-cards{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+}
+
+.gift-cards img{
+    height: 70%;
+    margin-left: -30px;
+    padding: 20px;}
+
+/* Footer Using Grid Properties------*/
+
+footer .footer-cols{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    text-align: left;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+footer .footer-cols ul{
+    list-style: none;
+}
+
+footer .footer-cols ul li:first-child{
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #444;
+    margin-bottom: 1rem;
+}
+
+footer .footer-bottom{
+    background: var(--secondary-color);
+    padding: 1rem;
+}
+
+/* Global-------- */
+.container{
+ max-width: 1180px;
+ text-align: center;
+ margin: 0 auto;
+ padding:  0 2rem;
+}
+
+/* Showcase---------- */
+
+#showcase{
+    margin: 0;
+    padding: 0;
+    background: url('../landingpage/img/showcase.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
+#showcase .container{
+    margin-top: 25vh;
+}
+
+#showcase h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+#showcase h2{
+    font-size: 2rem;
+}
+
+.lead{
+    font-size: 1.3rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.active{
+    color: var(---hover-blue);
+}
+
+/* Modal ------------ */
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(158, 155, 155);
+}
+
+.modal-header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button:hover{
+color: #833434;
+}
+
+.modal-body{
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.modal-body p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #347883;
+  letter-spacing: .1px;
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+}
+
+#overlay.active{
+    opacity: 40;
+    pointer-events: all;
+}
+
+
+/* Button ------------*/
+.btn{
+    padding: 1rem ;
+    color: #fff;
+    display: inline-block;
+    border-radius: 10px;
+}
+.btn-primary:hover{
+    /* background: var(--primary-color-hover); */
+    letter-spacing: .1rem;
+}
+.btn-primary{
+    background: var(--primary-color);
+}
+
+.btn-secondary:hover{
+    /* background: var(--secondary-color-hover); */
+    letter-spacing: .1rem;
+}
+.btn-secondary{
+    background: var(--secondary-color);
+}
+
+/* Text Colors----- */
+.text-primary{
+    color: var(--primary-color);
+}
+.text-secondary{
+    color: var(--secondary-color);
+}
+.text-light{
+    color: #333;
+}
+
+.bg-light{
+    background: var(--light-color);
+    color: #333;
+}
+
+.bg-white{
+    background: var(--white-color);
+    color: #333;
+}
+
+.mb{
+    margin-bottom: 1rem;
+}
+.mt{
+    margin-top: 1rem;
+}
+
+
+/* Navigation---------- */
+
+nav {
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: #fff;
+    /* margin-bottom: -20px;
+    margin-top: -20px; */
+  }
+
+  nav ul{
+    padding: 0;
+    margin: 0;
+} 
+
+nav li{
+    list-style: none;
+    display: block;
+    /* float: left; */
+}
+
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  .nav-toggle {
+    font-size: 1.5rem;
+    color: var(--clr-primary-5);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  .nav-toggle:hover {
+    color: var(---hover-blue);
+    transform: rotate(90deg);
+  }
+  .logo {
+    height: 40px;
+    padding-top: 0.5rem;
+    cursor: pointer;
+  }
+  .links a {
+    color: var(--white-color);
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+  
+  }
+
+  .links a:hover {
+    color: var(---hover-blue);
+    padding-left: 1.5rem;
+  }
+
+  .links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+
+  .links ul li{
+    text-decoration: none;
+  }
+
+  .show-links {
+    height: 10rem;
+  }
+
+/* @Media Query---------------- */
+@media screen and (max-width: 580px){
+   .hide-on-small{
+       display: none;
+   }
+
+   #showcase{
+       height: 45vh;
+   }
+   #showcase .container{
+       margin-top: 10vh;
+   }
+  #showcase h1{
+      font-size: 2rem;
+  }
+  #showcase h2{
+    font-size: 1.5rem;
+}
+
+}
+
+@media screen and (max-width: 780px){
+    .gift-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .gift-cards h2{
+      margin-top: -3rem;
+    }
+
+    footer .footer-cols{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 580px){
+  #showcase p.lead{
+      display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+    
+    .left {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+  
+    .nav-header {
+      padding: 0;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .links {
+      height: auto;
+      display: flex;
+    }
+    .links a {
+      padding: 0;
+      margin: 0 0.5rem;
+    }
+    .links a:hover {
+      padding: 0;
+      background: transparent;
+    }
+   
+  }
+  
