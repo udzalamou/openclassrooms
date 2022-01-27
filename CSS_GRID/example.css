@@ -1,0 +1,21 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 100px 40px;
+}
+
+.header{
+    grid-column: span 12;
+}
+
+.menu{
+    grid-column: span 4;
+}
+
+.content{
+    grid-column: span 8;
+}
+
+.footer{
+    grid-column: span 12;
+}

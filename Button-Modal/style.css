@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.3em;
+    padding: 0;
+    margin: 0;
+    background-color: #F2F2F2;
+  }
+  
+/* Global ----------------*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    justify-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .text-center h1{
+      padding: 5.5%;
+  }
+
+  .btn-readmore{
+    padding: 8px 24px;
+    border: 3px solid #347883;
+    border-radius: 1rem;
+    transition: 0.4s;
+    display: inline-block;
+    margin-bottom: 24px;
+     /* margin-left: 24px; */
+    margin: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+  }
+  
+  .btn-readmore:hover{
+    background: #3EC1D5;
+    text-decoration: none;
+    padding: 8px 64px 8px 24px;
+    color: white;
+  }
+  
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(158, 155, 155);
+}
+
+.modal-header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button:hover{
+color: #347883;
+}
+
+.modal-body{
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.modal-body p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #347883;
+  
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active{
+    opacity: 2;
+    pointer-events: all;
+}

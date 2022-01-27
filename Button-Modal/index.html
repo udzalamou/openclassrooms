@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Modal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+      <button class="btn-readmore" data-modal-target="#modal">Open Modal</button>
+        <div class="modal" id="modal"> 
+            <div class="modal-header">
+                <div class="title">Message</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <p>Use your JavaScript skills to build interactive, 
+                dynamic web apps. Learn to interact with your users 
+                and to leverage external APIs to build rich, 
+                immersive user experiences.</p>
+
+                <p>Build a strong foundation in web development by learning 
+                    and practicing JavaScript, one of the major programming 
+                    languages on the web. You'll even create a simple application!
+                </p>
+
+            </div>
+        </div>
+        <hr>
+
+        <!-- Onclick Events -->
+        <div class="onclick">
+            <img src="image/mockup1.jpg" alt="" width="20%" id="img">
+        </div>
+        <button class="btn-readmore" id="hide" >Hide the Image</button>
+        <button class="btn-readmore" id="show">Show the Image</button>
+
+        <!-- Mouse Over -->
+        <div class="text-center">
+            <h1 id="text">My JavaScript</h1>
+        </div>
+        
+        
+        
+        <div  id="overlay"></div>
+   </div>
+</body>
+</html>

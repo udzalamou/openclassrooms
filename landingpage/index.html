@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+   <!-- font-awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" >
+ 
+    <link rel="stylesheet" href="style.css">
+    <title>Landing JavaScript</title>
+</head>
+<body>
+
+    <nav>
+        <div class="left">
+          <!-- nav header -->
+          <div class="nav-header">
+            <a href="index.html"><img src="img/JT.svg" class="logo" alt="logo"></a>
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <ul class="links">
+            <li class="active"><a href="#audio">Audio</a></li>
+            <li><a href="#movie">Movie</a></li>
+            <li><a href="#publication">Publics</a></li>
+            <li><a href="#gift-cards">Gift Cards</a></li>
+          </ul>
+        </div>
+    </nav>
+
+<!-- Showcase & nav section -->
+<div id="showcase">
+    <div class="section-main container">
+        <h1>MyLanding</h1>
+        <h2>Build a Landing Page Using Javascript</h2>
+            <p class="lead hide-on-small">
+                Get started with Javascript on this gaming company's website, GameOn. In this
+                first programming project, you'll discover how to code with Javascript from
+                scratch.
+            </p>
+    </div>
+</div>
+
+<!-- Audio section -->
+<section id="audio" class="section bg-white">
+    <div class="container">
+        <h2 class="section-head">
+            <i class="fas fa-music"></i> Audio
+        </h2>
+        <h3>Program using fundamentals of JavaScript</h3>
+        <p class="lead">Build a strong foundation in web development by learning
+            and practicing JavaScript, one of the major programming
+            languages on the web. You'll even create a simple application!</p>
+            <a href="#audio" class="btn btn-primary mb" data-modal-target="#modal">Start building your page</a>
+
+            <div class="modal" id="modal"> 
+                <div class="modal-header">
+                    <div class="title">Message</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+    
+                <div class="modal-body">
+                    <p>A landing page is a standalone web page that a person "lands" on after clicking through
+                         from an email, ad, or other digital location.
+                        Once they’re on your landing page, users are encouraged to take an action, 
+                        such as joining your list or buying your products. 
+                        If the user takes the specific desired action, then your landing page has 
+                        succeeded in getting them to convert.
+                      </p>
+                </div>
+            </div>
+            <p class="text-light mb">Build a strong foundation in web development</p>
+
+            <img src="img/mockup-3.png" alt="mockup image 3">
+    </div>
+</section>
+
+<!-- Movies section -->
+<section id="movie" class="section bg-light">
+    <div class="container">
+        <h3>Write JavaScript for the Web</h3>
+        <p class="lead">Use your JavaScript skills to build interactive, dynamic web
+            apps. Learn to interact with your users and to leverage external
+            APIs to build rich, immersive user experiences.
+        </p>
+            <a href="#movie" class="btn btn-secondary mb" data-modal-target="#modal">Cours associés</a>
+
+            <div class="modal" id="modal"> 
+                <div class="modal-header">
+                    <div class="title">Message video</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+    
+                <div class="modal-body">
+                    <p>A standalone web page that potential customers can “land” on 
+                        when they click through from an email, ad, or other digital location. 
+                        A landing page aims to capture information from contacts in exchange 
+                        for something of value, such as a retail offer code or business-to-business 
+                        (B2B) insights in the form of a white paper. Landing pages are different 
+                        from other web pages in that they don’t live in the evergreen navigation 
+                        of a website. They serve a specific purpose in a specific moment of an 
+                        advertising campaign to a target audience.
+                    </p>
+                </div>
+            </div>
+
+            <img src="img/mockup-1.png" alt="mockup image 1">
+    </div>
+</section>
+
+
+<!-- Publication section -->
+<section id="publication" class="section">
+    <div class="container">
+        <h3>Learn Programming With JavaScript</h3>
+        <p class="lead">
+            Use your JavaScript skills to build interactive, dynamic web
+            apps. Learn to interact with your users and to leverage external
+            APIs to build rich, immersive user experiences</p>
+    </div>
+</section>
+
+<!-- Gift card section -->
+<section id="gift-cards" class="section bg-light">
+    <div class="container">
+        <div class="gift-cards">
+            <div>
+                <img src="img/cards.jpg" alt="Card">
+            </div>
+            <div>
+                <h2>Gift Cards</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Assumenda placeat quos corporis magnam nesciunt atque excepturi 
+                    consequatur ipsam, laudantium aspernatur aliquam corrupti fugit, 
+                    quisquam nostrum provident! Deserunt assumenda ipsa, 
+                    magni tempora exercitationem dolorem veniam, facere minus, 
+                    vel dignissimos adipisci expedita?
+                </p>
+                    <p> Learn to interact with your users and to leverage external</p>
+                    <hr>
+                    <a href="#" class="text-secondary"></a>
+                    <i class="fas fa-chevron-right"></i>
+                    Reedem
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer section -->
+<footer>
+    <div class="container">
+        <div class="footer-cols">
+            <ul>
+                <li>Code & learn</li>
+                <li>
+                    <a href="#">Audio</a>
+                </li>
+                <li>
+                    <a href="#">Movies</a>
+                </li>
+                <li>
+                    <a href="#">Shows</a>
+                </li>
+                <li>
+                    <a href="#">Code</a>
+                </li>
+                <li>
+                    <a href="#">Gift Cards</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>Coding with Javascript</li>
+                <li>
+                    <a href="#">Start coding</a>
+                </li>
+                <li>
+                    <a href="#">Variable</a>
+                </li>
+                <li>
+                    <a href="#">class</a>
+                </li>
+                <li>
+                    <a href="#">Properties</a>
+                </li>
+                <li>
+                    <a href="#">JavaScript skills</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>fundamentals</li>
+                <li>
+                    <a href="#">For Beginners</a>
+                </li>
+                <li>
+                    <a href="#">Variable</a>
+                </li>
+                <li>
+                    <a href="#">class</a>
+                </li>
+                <li>
+                    <a href="#">Properties</a>
+                </li>
+                <li>
+                    <a href="#">JavaScript skills</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li> immersive</li>
+                <li>
+                    <a href="#">For Beginners</a>
+                </li>
+                <li>
+                    <a href="#">Variable</a>
+                </li>
+                <li>
+                    <a href="#">class</a>
+                </li>
+                <li>
+                    <a href="#">Properties</a>
+                </li>
+                <li>
+                    <a href="#">JavaScript skills</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom text-center">
+       &copy; 2021 Landing Page
+    </div>
+</footer>
+
+<div  id="overlay"></div>
+  
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <!-- <a class="scroll-link top-link" href="#showcase">
+    <i class="fas fa-arrow-up"></i>
+  </a> -->
+  <!-- javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

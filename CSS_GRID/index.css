@@ -1,0 +1,30 @@
+body{
+    background: rgb(255, 255, 178);
+}
+h1{
+    color: black;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.list{
+    padding-left: 0;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 80px;
+}
+ .list :nth-child(1){
+     grid-column: 1/ span 2;
+ }
+
+ .list :nth-child(6){
+     grid-column: 1/ span 2;
+ } 
+  
+li:hover{
+    background-color: #ff6f69;
+}
