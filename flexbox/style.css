@@ -1,0 +1,42 @@
+body{
+    background-color: azure;
+    font-size: 130%;
+    font-family: monospace;
+}
+
+.columns{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.container{
+    padding: 50px;
+}
+
+.title{
+    padding: 20px;
+    text-align: center;
+    font-size: 120%;
+    color: rgb(172, 167, 167);
+}
+
+.col{
+    width: 100%;
+}
+.col p{
+    border: 1px solid violet;
+    background-color: violet;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 1%;
+}
+
+.col p:hover{
+    color: #fff;
+    border: 1px solid rgb(156, 0, 156);
+    background-color: rgb(156, 0, 156);
+
+}
